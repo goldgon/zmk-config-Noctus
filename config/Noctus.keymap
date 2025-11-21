@@ -37,6 +37,130 @@
         };
     };
 
+    // キー番号早見表：
+    // 0  1  2  3  4           5  6  7  8  9
+    // 10 11 12 13 14          15 16 17 18 19
+    // 20 21 22 23 24          25 26 27 28 29
+    // 31 32 33 34 35          36 37 38 39 40
+
+/ { 
+    combos {
+        compatible = "zmk,combos";
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <14 15>;
+            layers = <0>;
+        };
+
+
+        bt_clr_all {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <0 10 20>;
+            layers = <0>;
+        };
+
+        bt0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <5 15 27>;
+            layers = <0>;
+        };
+
+        bt1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <6 16 28>;
+            layers = <0>;
+        };
+
+       m4_L {
+            bindings = <&mo 4>;
+            key-positions = <12 13>;
+
+        };	
+
+       m5_L {
+            bindings = <&mo 5>;
+            key-positions = <11 12>;
+
+        };	
+
+       m5_R {
+            bindings = <&mo 5>;
+            key-positions = <17 18>;
+
+        };
+
+
+       bootloader {
+            bindings = <&bootloader>;
+            key-positions = <0 9 25 26>;
+            timeout-ms = <50>;
+        };
+
+        lang1 {
+            bindings = <&kp LANG1>;
+            key-positions = <12 13>; /* D + F */
+            layers = <0>;
+        };
+
+        lang2 {
+            bindings = <&kp LANG2>;
+            key-positions = <16 17>; /* J + K */
+            layers = <0>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <20 21>; /* Z + X */
+            layers = <0>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <0 1>; /* Q + W */
+            layers = <0>;
+        };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <16 17>; /* J + K (on layer 2) */
+            layers = <2>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <18 19>; /* L + - (on layer 2) */
+            layers = <2>;
+        };
+
+        ctrl_home {
+            bindings = <&kp LC(HOME)>;
+            key-positions = <16 18>; /* J + L (on layer 2) */
+            layers = <2>;
+        };
+
+        ctrl_end {
+            bindings = <&kp LC(END)>;
+            key-positions = <17 19>; /* K + - (on layer 2) */
+            layers = <2>;
+        };
+
+        fopen {
+            bindings = <&kp LG(N2)>;
+            key-positions = <8 9>;
+            timeout-ms = <50>;
+        };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <7 8 9>;
+            timeout-ms = <50>;
+        };
+
+
+    };
+
+
 / {
       keymap {
         compatible = "zmk,keymap";
