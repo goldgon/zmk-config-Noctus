@@ -18,6 +18,13 @@
 
 / {
     combos { compatible = "zmk,combos";
+
+       bt_clr_all {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <31 35 36 40>;
+            layers = <0>;
+        };
+
        bt0 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <5 15 25>;
