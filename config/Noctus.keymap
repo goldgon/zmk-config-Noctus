@@ -4,12 +4,17 @@
 #include <dt-bindings/zmk/pointing.h>
 #include "keycode_japanese.h"
 
-
-&mt {
-    flavor = "balanced";
-    quick-tap-ms = <0>;
+&mt { 
+    flavor = "balanced"; 
+    tapping-term-ms = <200>;
+    quick-tap-ms = <150>; 
 };
 
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <200>; 
+    quick-tap-ms = <150>; 
+};
 / {
     combos { compatible = "zmk,combos"; };
 
