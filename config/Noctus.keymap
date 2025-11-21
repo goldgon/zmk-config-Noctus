@@ -89,41 +89,41 @@
 &kp ESCAPE          &kp Q        &kp E      &kp U         &kp P                                    &kp D        &kp T         &kp R       &kp W       &mkp MB1
 &mt LSHIFT TAB      &lt 3 O        &lt 2 A      &lt 1 I         &mt LCTRL F                              &mt RCTRL H  &lt 1 Y         &lt 2 K       &lt 3 S       &mt LEFT_SHIFT B
 &lt 4 MINUS    &mt LGUI X   &mt LALT C &mt LSHIFT V  &mt LCTRL L                                   &mt RCTRL N        &mt RSHIFT M  &mt RALT G  &mt RGUI J  &lt 3 Z
-&kp LCTRL         &kp LEFT_WIN                                  &lt 2 SPACE  &lt 3 INT_MUHENKAN &lt 4 COLON   &kp SEMICOLON &kp BACKSPACE  &lt 1 ENTER                      &kp RIGHT_ALT &kp DEL
+&kp LCTRL         &kp LEFT_WIN          &lt 2 SPACE  &lt 3 INT_MUHENKAN &kp LC(RG(LEFT))        &kp LG(RC(RIGHT))  &kp BACKSPACE  &lt 1 ENTER                      &kp RIGHT_ALT &kp DEL
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans                                  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &kp F11
+   &kp 0x38     &none      &kp UP     &none       &none                                 &kp TAB          &kp UP          &kp N8        &kp N9         &mkp MB3
+   &kp JP_SEMI  &kp LEFT   &kp GRAVE  &kp GRAVE   &kp MINUS                             &kp BACKSPACE  &kp SPACE       &kp TAB       &kp ENTER      &kp COMMA 
+   &kp JP_COLON &none      &none      &none       &none                                 &kp DELETE     &kp N1          &kp N2        &kp N3         &mt LCTRL PERIOD
 &trans  &trans                  &trans  &trans &trans    &trans &trans  &trans                  &trans  &kp F12
             >;
         };
 
         layer_2 {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK                            &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD                              &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
+&none        &kp JP_LT      &kp JP_EQUAL   &kp JP_RT  &none                                        &none          &kp JP_PLUS     &none        &kp JP_SLASH  &mkp MB3
+&none        &kp JP_LPAR    &kp JP_AT      &kp JP_RPAR   &kp MINUS                                 &kp JP_QMARK   &kp ENTER  &kp DOUBLE_QUOTES &kp LS(0x87)  &kp LS(0x1e)
+&none        &kp JP_LBRC    &none          &kp JP_RBRC   &none                                     &kp DELETE          &none           &none         &none         &none
 &trans                      &trans                                             &kp EQUAL &trans &trans   &trans &trans &trans                                               &trans                &kp PIPE
             >;
         };
 
         layer_3 {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                                &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END                               &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans                                &trans  &trans  &trans  &trans  &trans
+&none        &kp HOME   &kp UP     &kp PAGE_UP      &none                                 &kp TAB          &kp N7          &kp N8        &kp N9         &mkp MB3
+&none        &kp LEFT   &kp DOWN   &kp RIGHT        &none                                 &kp BACKSPACE  &kp N4          &mt RGUI N5        &kp N6         &kp ENTER
+&none        &kp END    &none      &kp PAGE_DOWN    &none                                 &kp N0         &kp N1          &kp N2        &kp N3         &mt LCTRL PERIOD
 &trans          &trans                                                           &trans &trans &trans   &trans &trans  &trans                  &trans  &trans
             >;
         };
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans                                     &trans        &trans        &trans        &trans        &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5                  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&none   &none   &kp JP_AT   &none   &none                   &none   &none   &none   &kp JP_HASH   &none
 &trans  &trans  &trans  &trans  &trans                                     &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans                  &trans  &trans &bootloader   &trans &trans &trans                                    &trans        &bt BT_CLR_ALL
             >;
