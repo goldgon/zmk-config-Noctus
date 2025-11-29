@@ -30,6 +30,16 @@ split_inputs {
             <&zip_xy_scaler 1 16>,
             <&zip_scroll_scaler 1 5>,
             <&zip_xy_to_scroll_mapper>;
+
+        // レイヤー限定でキー入力に変換
+        layer_keys {
+            layers = <2>;   // レイヤー2でのみ有効
+            sensor-bindings = <
+                &inc_dec_kp RIGHT_ARROW LEFT_ARROW   // X軸 → 左右矢印
+                &inc_dec_kp UP_ARROW DOWN_ARROW      // Y軸 → 上下矢印
+            >;
+        };
+
     };
 
     trackball_listener_R: trackball_listener_R {
